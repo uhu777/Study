@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 6px;
+}
+
+body > div {
+  padding: 12px;
+}
+form {
+  padding: 0px 12px;
+}

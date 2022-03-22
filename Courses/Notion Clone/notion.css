@@ -1,0 +1,159 @@
+/*color*/
+/*fontSize*/
+/*fontWeight*/
+/*padding*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* button {
+  border: none;
+  background: none;
+}
+
+body {
+  background: #fffefc;
+}
+
+.head-notion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px;
+}
+
+.head-notion .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head-notion .logo i {
+  font-size: 30px;
+}
+
+.head-notion .logo span {
+  font-size: 16x;
+  font-weight: bold;
+  padding-left: 8px;
+}
+
+.head-notion .logo span a {
+  text-decoration: none;
+  color: black;
+}
+
+.head-notion .menuBar button {
+  background: #e16259;
+  border: #be5643;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: white;
+  font-size: 16x;
+}
+
+.head-notion .menuBar i {
+  font-size: 22px;
+  padding-left: 8px;
+}
+
+.notion-main {
+  text-align: center;
+}
+
+.notion-main .first-art .image {
+  padding-top: 35px;
+}
+
+.notion-main .first-art .image img {
+  width: 320px;
+}
+
+.notion-main .first-art .first-title {
+  padding-top: 12px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.notion-main .first-art .first-text {
+  font-size: 17px;
+  color: gray;
+  padding-top: 12px;
+}
+
+.notion-main .first-art form {
+  padding-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notion-main .first-art form input {
+  width: 230px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.notion-main .first-art form button {
+  background: #e16259;
+  border: #be5643;
+  padding: 7px 12px;
+  border-radius: 4px;
+  color: white;
+  font-size: 16x;
+}
+
+.notion-main .first-art .remark {
+  padding-top: 12px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.notion-main .second-art {
+  margin-top: 35px;
+  background: #f9f5f1;
+}
+
+.notion-main .second-art .second-category {
+  padding: 40px 0px;
+}
+
+.notion-main .second-art .second-category button {
+  font-size: 14px;
+  padding: 0px 8px;
+}
+
+.notion-main .second-art .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 300%;
+}
+
+.notion-main .second-art .slider .slider_item img {
+  width: 100%;
+}
+
+.notion-main .second-art .slider .showing {
+  z-index: 1;
+}
+/*# sourceMappingURL=notion.css.map */

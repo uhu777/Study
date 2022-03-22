@@ -1,0 +1,226 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+button,
+button:focus {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 8px;
+}
+
+.head .logo i {
+  color: red;
+}
+
+.head .logo a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.search {
+  color: whitesmoke;
+}
+
+.search i:last-child {
+  padding-right: 5px;
+}
+
+.search i:first-child {
+  padding-right: 5px;
+}
+
+.player {
+  text-align: center;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+}
+
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+.title {
+  padding: 12px;
+}
+
+.info .title .hashTag {
+  display: flex;
+}
+
+.info .hashTag li {
+  list-style: none;
+  padding: 4px 0px;
+  color: blue;
+}
+
+.info .name {
+  display: flex;
+  font-weight: bold;
+}
+
+.info .name .stretch {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.info .name button {
+  padding: 5px;
+  margin-left: 10px;
+  height: 100%;
+  transition-duration: 0.5s;
+}
+
+.info .name .trans {
+  transform: rotate(180deg);
+}
+
+.title .playTime {
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+}
+
+.icon .five {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+}
+
+.icon .five li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  color: rgb(153, 153, 153);
+  font-size: 14px;
+}
+
+.icon .five li:first-child {
+  color: blue;
+}
+
+.icon .five i {
+  margin: auto;
+  padding-bottom: 3px;
+}
+
+.info .youtuber {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 8px;
+  border-top: 1px lightgray solid;
+  border-bottom: solid 1px lightgray;
+}
+
+.info .youtuber .faceName {
+  display: flex;
+  align-items: center;
+}
+
+.info .youtuber .face img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.info .youtuber .yourName {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.info .youtuber .yourName li:first-child {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.info .youtuber .yourName li:last-child {
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+}
+
+.youtuber button {
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
+}
+
+.upNext {
+  padding: 8px;
+}
+
+.upNext .upTitle > span {
+  padding-bottom: 10px;
+}
+
+.upNext .item {
+  display: flex;
+  padding: 6px 0px;
+}
+
+.upNext .item img {
+  flex: 1 1 35%;
+  width: 10%;
+  height: 10%;
+  border-radius: 5px;
+}
+
+.upNext .item .nextTitle {
+  flex: 1 1 60%;
+  padding-left: 5px;
+}
+
+.upNext .item .add {
+  flex: 1 1 5%;
+}
+
+.upNext .item .upTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+}
+
+.upNext .item .add {
+  height: 100%;
+  margin-top: 5px;
+}
+
+.item .upMaker,
+.item .upViewers {
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+}
+
+@media screen and (min-width: 768px) {
+  #devide {
+    display: flex;
+  }
+  .info {
+    flex: 1 1 50%;
+  }
+  .upNext {
+    flex: 1 1 50%;
+  }
+}

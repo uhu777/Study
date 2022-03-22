@@ -1,0 +1,119 @@
+:root {
+  --text-color: whitesmoke;
+  --background-color: #000063;
+  --point-color: #6746c3;
+  --logo-color: #f3693f;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-color);
+  padding: 0px 25px;
+}
+
+.navLogo {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.navLogo i {
+  color: var(--logo-color);
+  font-size: 30px;
+  padding: 5px;
+}
+
+.navMenu {
+  display: flex;
+  padding-left: 0px;
+}
+
+.navMenu li {
+  list-style: none;
+  padding: 12px;
+}
+
+.navMenu li:hover {
+  background: var(--point-color);
+  border-radius: 10px;
+}
+
+.navLink {
+  display: flex;
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.navLink li {
+  list-style: none;
+  padding: 10px;
+}
+
+#butten {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px;
+  display: none;
+}
+
+#butten:hover {
+  background: var(--point-color);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .navLogo {
+    font-size: 20px;
+  }
+
+  .navMenu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    font-size: 15px;
+    display: none;
+  }
+
+  .navMenu li {
+    padding: 5px;
+  }
+
+  .navLink {
+    width: 100%;
+    margin: 5px;
+    padding-left: 0px;
+    justify-content: center;
+    display: none;
+  }
+
+  .navLink li {
+    padding: 5px 15px;
+  }
+
+  #butten {
+    display: block;
+  }
+
+  .active {
+    display: flex;
+  }
+}

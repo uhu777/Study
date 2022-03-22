@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f6cc513b85.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!----------header-------------->
+    <header class="head">
+      <span class="logo">
+        <i class="fab fa-youtube"></i>
+        <a href="">Youtube</a>
+      </span>
+      <span class="search">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </span>
+    </header>
+
+    <!----------Video-------------->
+    <section class="player">
+      <video controls src="video.mp4"></video>
+    </section>
+    <div id="devide">
+      <!----------Information-------------->
+      <section class="info">
+        <div class="title">
+          <!--------hashTag--------->
+          <span class="hashTag">
+            <li>#Javascript</li>
+            <li>#basic</li>
+            <li>#Course</li>
+          </span>
+          <!--------name--------->
+          <div class="name">
+            <span class="stretch">
+              자바스크립트 배우기전 꼭 봐야할 영상 | 자바스크립트의 역사와 현재
+              그리고 미래 (JavaScript, ECMAScript, JQuery, Babel, Node.js)
+            </span>
+            <button><i class="fas fa-caret-down"></i></button>
+          </div>
+          <!--------playTIme--------->
+          <span class="playTime">1M views 1 mounth ago</span>
+        </div>
+        <!--------icon--------->
+        <div class="icon">
+          <ul class="five">
+            <li><i class="fas fa-thumbs-up"></i><span>1K</span></li>
+            <li><i class="far fa-thumbs-down"></i><span>0</span></li>
+            <li><i class="fas fa-share"></i><span>Share</span></li>
+            <li><i class="fas fa-plus"></i><span>Save</span></li>
+            <li><i class="fas fa-flag"></i><span>Report</span></li>
+          </ul>
+        </div>
+        <!--------youtuber--------->
+        <div class="youtuber">
+          <div class="faceName">
+            <span class="face"><img src="/새 폴더/0.jpg" alt="" /></span>
+            <span class="yourName">
+              <li>DreamCoding</li>
+              <li>1M subscribers</li>
+            </span>
+          </div>
+          <button class="subscribe">subscribe</button>
+        </div>
+      </section>
+
+      <!---------UP next Video-------------->
+      <section class="upNext">
+        <div class="upTitle">
+          <span>Up Next</span>
+          <ul>
+            <li class="item">
+              <img src="/새 폴더/0.jpg" alt="" />
+              <div class="nextTitle">
+                <div class="upTitle">
+                  자바스크립트 2. 콘솔에 출력, script async 와 defer의 차이점 및
+                  앞으로 자바스크립트 공부 방향 | 프론트엔드 개발자 입문편
+                  (JavaScript ES5+)
+                </div>
+                <div class="upMaker">DreamCoding</div>
+                <div class="upViewers">1M viewers</div>
+              </div>
+              <button class="add"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+              <img src="/새 폴더/1.jpg" alt="" />
+              <div class="nextTitle">
+                <div class="upTitle">
+                  자바스크립트 3. 데이터타입, data types, let vs var, hoisting |
+                  프론트엔드 개발자 입문편 (JavaScript ES5+)
+                </div>
+                <div class="upMaker">DreamCoding</div>
+                <div class="upViewers">1M viewers</div>
+              </div>
+              <button class="add"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+              <img src="/새 폴더/2.jpg" alt="" />
+              <div class="nextTitle">
+                <div class="upTitle">
+                  자바스크립트 4. 코딩의 기본 operator, if, for loop 코드리뷰 팁
+                  | 프론트엔드 개발자 입문편 (JavaScript ES6)
+                </div>
+                <div class="upMaker">DreamCoding</div>
+                <div class="upViewers">1M viewers</div>
+              </div>
+              <button class="add"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="active.js"></script>
+  </body>
+</html>

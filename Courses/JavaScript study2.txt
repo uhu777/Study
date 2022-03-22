@@ -1,0 +1,23 @@
+JavaScript = HTML을 제어하여 사용자와 상호작용하는 언어이다. 동적인 특성을 부여하는 언어
+
+<script>_아래 표기되는 사항이 JavaScript 라는 것을 알려주기 위해 사용되는 HTML 태그
+  document.write(Hello world); _웹페이지에 글씨를 출력할때 사용
+</script>
+
+* 상호작용 버튼을 만드는 방법
+- input type="button" value="이름" onclick="JScode"
+
+*숫자와 문자열의 개념을 주의하여 사용하는 것이 필요하다.
+1+1 = 2
+"1"+"1" = 11
+
+* JavaScript 언어는 <body> 태그에서 직접적으로 사용 가능하다.
+
+
+HTML / CSS / JavaScript 모두 방식은 비슷하지만, 표현하는 언어가 다르다
+
+JavaScript 에서 사용되는 데이터 타입
+1. Number 숫자형
+2. String 문자형
+3. Boolean 진실과 거짓 2분법으로 구분 // 비교 연산자 - 조건문과 함께 사용
+- if

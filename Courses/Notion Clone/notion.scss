@@ -1,0 +1,149 @@
+/*color*/
+$color-beige: #fffefc;
+$color-darkBeige: #f9f5f1;
+$color-white: white;
+$color-gray: gray;
+$color-lightgray: lightgray;
+$color-middelgray: #b3b3b3;
+$color-red: #e16259;
+$color-darkRed: #be5643;
+$color-black: black;
+/*fontSize*/
+$font-large: 30px;
+$font-regular: 16x;
+$font-semiLarge: 17px;
+$font-small: 14px;
+/*fontWeight*/
+$style-bold: bold;
+/*padding*/
+$padding: 12px;
+$padding-left: 8px;
+$padding-top: 35px;
+
+* {
+  margin: 0;
+  padding: 0;
+  button {
+    border: none;
+    background: none;
+  }
+}
+
+body {
+  background: $color-beige;
+}
+
+.head-notion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: $font-large;
+    }
+    span {
+      font-size: $font-regular;
+      font-weight: $style-bold;
+      padding-left: $padding-left;
+      a {
+        text-decoration: none;
+        color: $color-black;
+      }
+    }
+  }
+
+  .menuBar {
+    button {
+      background: $color-red;
+      border: $color-darkRed;
+      padding: 8px 12px;
+      border-radius: 4px;
+      color: $color-white;
+      font-size: $font-regular;
+    }
+    i {
+      font-size: 22px;
+      padding-left: $padding-left;
+    }
+  }
+}
+
+.notion-main {
+  text-align: center;
+
+  .first-art {
+    .image {
+      padding-top: $padding-top;
+      img {
+        width: 320px;
+      }
+    }
+    .first-title {
+      padding-top: $padding;
+      font-size: 45px;
+      font-weight: $style-bold;
+    }
+    .first-text {
+      font-size: $font-semiLarge;
+      color: $color-gray;
+      padding-top: $padding;
+    }
+    form {
+      padding-top: $padding-top;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      input {
+        width: 230px;
+        height: 30px;
+        border: 1px solid $color-lightgray;
+        border-radius: 4px;
+        margin-right: $padding-left;
+      }
+      button {
+        background: $color-red;
+        border: $color-darkRed;
+        padding: 7px 12px;
+        border-radius: 4px;
+        color: $color-white;
+        font-size: $font-regular;
+      }
+    }
+    .remark {
+      padding-top: $padding;
+      font-size: $font-small;
+      color: $color-middelgray;
+    }
+  }
+
+  .second-art {
+    margin-top: $padding-top;
+    background: $color-darkBeige;
+
+    .second-category {
+      padding: 40px 0px;
+      button {
+        font-size: $font-small;
+        padding: 0px 8px;
+      }
+    }
+    .slider {
+      display: flex;
+      overflow: hidden;
+      width: 300%;
+      .slider_item {
+        img {
+          width: 100%;
+        }
+      }
+      .showing {
+        z-index: 1;
+      }
+    }
+  }
+}
